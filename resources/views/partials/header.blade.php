@@ -17,7 +17,7 @@
                         <a href="#">Blog</a>
                     </li>
                     <li>
-                        <a href="#">Contatti</a>
+                        <a href="{{ route('contacts') }}">Contatti</a>
                     </li>
                     <li>
                         <a href="#">Risorse</a>

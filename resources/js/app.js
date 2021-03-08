@@ -8,8 +8,8 @@ var app = new Vue (
             posizione_immagine: 0,
             //creo una chiave per inserire le immagini, questa volta tramite un array per contenere più elementi dello stesso tipo
             immagine: [
-                'https://cameranation.it/wp-content/uploads/2019/06/beach-1761410_1280-800x448.jpg',
-                'https://www.raiplayradio.it/cropgd/853x480/dl/img/2018/04/26/1524742758393_paesaggio.jpg',
+                'images/avvocati-uno.jpg',
+                'images/avvocati-due.jpg',
                 'https://www.pixtury.com/photos/167AE4119C2-8957337235C14087944DFC/1.jpg'
             ]
         },
