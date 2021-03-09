@@ -19,7 +19,7 @@ Route::post('/contacts', function () {
 
     $data = request(['name','email','subject', 'message']);
 
-    \Illuminate\Support\Facades\Mail::to('giacomo.1936@gmail.com')
+    \Illuminate\Support\Facades\Mail::to('giacomodm.work@gmail.com')
     ->send(new \App\Mail\ContactMe($data));
 
     return redirect('/contacts')
