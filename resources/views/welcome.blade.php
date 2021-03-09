@@ -4,7 +4,7 @@
     <div id="root">
         <div class="slider">
             <div class="prev">
-                <i @click="immagine_precedente" class="fas fa-arrow-left fa-2x"></i>
+                <i @click="immagine_precedente" class="fas fa-chevron-left"></i>
             </div>
             <div class="images">
                 <img :src="immagine[posizione_immagine]" alt="">
@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="next">
-                <i @click="immagine_successiva" class="fas fa-arrow-right fa-2x"></i>
+                <i @click="immagine_successiva" class="fas fa-chevron-right"></i>
             </div>
         </div>
 

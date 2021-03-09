@@ -15,3 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@home')->name('welcome');
 Route::get('/contacts', 'HomeController@contacts')->name('contacts');
+Route::post('/contacts', function () {
+
+    $data = request(['name','email','subject', 'message']);
+
+    \Illuminate\Support\Facades\Mail::to('giacomo.1936@gmail.com')
+    ->send(new \App\Mail\ContactMe($data));
+
+    return redirect('/contacts')
+    ->with('flash', 'Message Sent Succesfull');
+});

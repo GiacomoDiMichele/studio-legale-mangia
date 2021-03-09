@@ -8,6 +8,7 @@ var app = new Vue (
             posizione_immagine: 0,
             //creo una chiave per inserire le immagini, questa volta tramite un array per contenere più elementi dello stesso tipo
             immagine: [
+                'https://studioavvocatogargano.it/wp-content/uploads/2018/08/avengers1-1.png',
                 'images/avvocati-uno.jpg',
                 'images/avvocati-due.jpg',
                 'https://www.pixtury.com/photos/167AE4119C2-8957337235C14087944DFC/1.jpg'
