@@ -7,12 +7,7 @@
                 <i @click="immagine_precedente" class="fas fa-chevron-left"></i>
             </div>
             <div class="images">
-                <img :src="immagine[posizione_immagine]" alt="">
-                <div class="circles">
-                    <i v-for="(img, posizione) in immagine"
-                        v-bind:class="posizione == posizione_immagine ? 'active' : 'null'"
-                        class="fas fa-circle"></i>
-                </div>
+                <img :src="immagine[posizione_immagine]" alt="foto-team-legale-mangia">
             </div>
             <div class="next">
                 <i @click="immagine_successiva" class="fas fa-chevron-right"></i>

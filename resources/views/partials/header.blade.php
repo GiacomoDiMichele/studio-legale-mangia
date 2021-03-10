@@ -1,5 +1,4 @@
-<header :class="isActive ? 'active' : ''">
-    <div class="container">
+<header>
         <div class="header-navbar">
             <div class="header-logo">
                 <a href="{{ route('welcome') }}">
@@ -32,10 +31,9 @@
                         <a href="#">Link</a>
                     </li>
                 </ul>
-                {{-- <div class="toggle-menu"  @click="toggleMenu()">
-                    <i class="fas fa-bars"></i>
-                </div> --}}
+            </div>
+            <div class="toggle-menu"  @click="toggleMenu()">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-    </div>
 </header>

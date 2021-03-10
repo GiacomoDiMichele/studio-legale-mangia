@@ -14,7 +14,16 @@ a {
     color: black;
 }
 
-.container {
+@media screen and (min-width: 1225px) {
+  .container {
+    width: 1200px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1525px) {
+  .container {
     width: 1500px;
     margin: auto;
+  }
 }
