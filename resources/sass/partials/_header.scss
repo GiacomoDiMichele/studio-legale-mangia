@@ -7,8 +7,9 @@ header {
         display: flex;
         align-items: center;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         height: 100%;
+        margin-left: 180px;
 
         .header-logo {
 
@@ -20,7 +21,7 @@ header {
                 .logo {
 
                     height: 100%;
-                    width: 100%;
+                    width: 80%;
 
                         img {
                             width: 100%;
@@ -44,7 +45,7 @@ header {
 
                         a {
                             color: grey;
-                            font-size: 20px;
+                            font-size: 22px;
                             text-transform: uppercase;
 
                             &:hover {

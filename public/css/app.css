@@ -14,6 +14,11 @@ a {
   color: black;
 }
 
+.container {
+  width: 1500px;
+  margin: auto;
+}
+
 header {
   height: 100px;
   position: absolute;
@@ -24,8 +29,9 @@ header .header-navbar {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   height: 100%;
+  margin-left: 180px;
 }
 
 header .header-navbar .header-logo {
@@ -35,7 +41,7 @@ header .header-navbar .header-logo {
 
 header .header-navbar .header-logo a .logo {
   height: 100%;
-  width: 100%;
+  width: 80%;
 }
 
 header .header-navbar .header-logo a .logo img {
@@ -60,7 +66,7 @@ header .header-navbar .header-menu ul li {
 
 header .header-navbar .header-menu ul li a {
   color: grey;
-  font-size: 20px;
+  font-size: 22px;
   text-transform: uppercase;
 }
 
@@ -79,7 +85,6 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin-top: 300px;
 }
 
 footer .container-contact {
@@ -159,6 +164,54 @@ footer .store {
   }
 }
 
+.container-contacts {
+  width: 900px;
+  margin: auto;
+  height: 750px;
+  margin-top: 50px;
+}
+
+.text-principal-contacts h1 {
+  color: #3b5190;
+}
+
+input {
+  display: block;
+  padding: 10px;
+  width: 600px;
+  margin: 40px 0px;
+  border-radius: 6px;
+  border-style: none;
+}
+
+textarea {
+  height: 100px;
+  width: 600px;
+  border-radius: 6px;
+  padding: 5px;
+  border: none;
+}
+
+#input-submit {
+  font-size: 20px;
+  color: white;
+  background-color: #3b5190;
+  text-transform: uppercase;
+}
+
+.cf {
+  width: 100%;
+  height: 610px;
+  margin-top: 20px;
+  background-color: #033c6d73;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 6px;
+  padding-top: 43px;
+}
+
 section {
   width: 100%;
   padding: 100px 0px;
@@ -208,5 +261,32 @@ section {
   font-size: 26px;
   padding: 12px 17px 12px 14px;
   background-color: black;
+}
+
+.statistiche {
+  background-color: grey;
+  width: 100%;
+  height: 300px;
+}
+
+.statistiche .dati-teamlegale {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.statistiche .dati-teamlegale .singolo-dato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.statistiche .dati-teamlegale .singolo-dato h1 {
+  font-size: 50px;
+}
+
+.statistiche .dati-teamlegale .singolo-dato p {
+  font-size: 21px;
 }
 

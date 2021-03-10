@@ -1,1 +1,50 @@
+.container-contacts {
+    width: 900px;
+    margin:auto;
+    height: 750px;
+    margin-top: 50px;
+}
 
+.text-principal-contacts {
+
+    h1 {
+        color: #3b5190;
+    }
+}
+
+input {
+    display: block;
+    padding: 10px;
+    width: 600px;
+    margin: 40px 0px;
+    border-radius: 6px;
+    border-style: none;
+}
+
+textarea {
+    height: 100px;
+    width: 600px;
+    border-radius: 6px;
+    padding: 5px;
+    border: none;
+}
+
+#input-submit {
+    font-size: 20px;
+    color: white;
+    background-color: #3b5190;
+    text-transform: uppercase;
+}
+
+.cf {
+    width: 100%;
+    height: 610px;
+    margin-top: 20px;
+    background-color: #033c6d73;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 6px;
+    padding-top: 43px;
+}

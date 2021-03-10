@@ -20,11 +20,30 @@
         </div>
 
         <section>
-            <h1>STATISTICHE</h1>
+            <h1>FRASE</h1>
         </section>
 
-        <section>
-            <h1>FRASE</h1>
+        <section class="statistiche">
+            <div class="container">
+                <div class="dati-teamlegale">
+                    <div class="singolo-dato">
+                        <h1>15</h1>
+                        <p>I nostri Praticanti, Avvocati, Segretari</p>
+                    </div>
+                    <div class="singolo-dato">
+                        <h1>70%</h1>
+                        <p>Il dato delle udienze vinte dal nostro team legale</p>
+                    </div>
+                    <div class="singolo-dato">
+                        <h1>15</h1>
+                        <p>I nostri Praticanti, Avvocati, Segretari</p>
+                    </div>
+                    <div class="singolo-dato">
+                        <h1>15</h1>
+                        <p>I nostri Praticanti, Avvocati, Segretari</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section>

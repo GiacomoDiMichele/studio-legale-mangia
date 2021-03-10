@@ -23,5 +23,5 @@ Route::post('/contacts', function () {
     ->send(new \App\Mail\ContactMe($data));
 
     return redirect('/contacts')
-    ->with('flash', 'Message Sent Succesfull');
+    ->with('flash', 'Message Sent Succesfully');
 });
