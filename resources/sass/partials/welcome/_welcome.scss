@@ -1,6 +1,6 @@
 section {
     width: 100%;
-    padding: 100px 0px;
+    padding: 55px 0px;
     text-align: center;
 }
 
@@ -51,9 +51,10 @@ section {
 }
 
 .statistiche {
-    background-color: #8080802e;
+    background-color: #1c489636;
     width: 100%;
     padding: 20px;
+    margin: 40px 0px;
 
     .dati-teamlegale {
         display: flex;
@@ -80,9 +81,84 @@ section {
     }
 }
 
+.principal-text-approfondimenti {
+    background: #1c489636;
+    padding: 55px;
+
+    h1 {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.section-approfondimenti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    padding-top: 115px;
+
+    .singolo-approfondimento {
+    flex-basis: 346px;
+    height: 250px;
+    margin: 20px;
+    border: 1px solid #f1f1f1;
+    padding: 40px 25px;
+
+        i {
+            font-size: 30px;
+        }
+
+        h5 {
+            font-size: 22px;
+            text-transform: uppercase;
+            padding: 10px 0px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+.separator-img {
+    background-image: url('https://www.studiolegalelionesarli.it/wp-content/uploads/2017/03/slider-studio-legale.jpg');
+    height: 390px;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    a {
+        padding: 15px 110px;
+        background-color: white;
+        color: black;
+        text-transform: uppercase;
+        border-radius: 7px;
+        margin-left: 49px;
+        font-weight: bolder;
+    }
+}
+
 @media screen and (min-width: 965px) {
     .statistiche {
-        background-color: #8080802e;
+        background-color: #1c489636;
         width: 100%;
         padding: 20px;
 

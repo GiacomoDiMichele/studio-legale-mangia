@@ -33,6 +33,7 @@ header {
   position: absolute;
   z-index: 1;
   width: 100%;
+  background-color: white;
 }
 
 header .header-navbar {
@@ -73,10 +74,28 @@ header .header-navbar .header-menu ul {
 
 header .header-navbar .header-menu ul li {
   margin: 0px 14px;
+  position: relative;
+}
+
+header .header-navbar .header-menu ul li::after {
+  content: "";
+  height: 2px;
+  width: 0px;
+  background: black;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -5px;
+  right: 0%;
+  transition: 0.3s;
+}
+
+header .header-navbar .header-menu ul li:hover::after {
+  width: 100%;
+  left: 0%;
 }
 
 header .header-navbar .header-menu ul li a {
-  color: grey;
+  color: #565050;
   font-size: 22px;
   text-transform: uppercase;
 }
@@ -139,7 +158,7 @@ footer {
   width: 100%;
   max-height: auto;
   padding: 60px 0;
-  background-color: #8080802e;
+  background-color: #F3F3F3;
   color: black;
   display: flex;
   flex-direction: column;
@@ -166,6 +185,7 @@ footer .container-social-online {
 
 footer .container-social-online h2 {
   font-weight: 200;
+  color: black;
 }
 
 footer .studio-footer h1 {
@@ -271,7 +291,7 @@ textarea {
 
 section {
   width: 100%;
-  padding: 100px 0px;
+  padding: 55px 0px;
   text-align: center;
 }
 
@@ -321,9 +341,10 @@ section {
 }
 
 .statistiche {
-  background-color: #8080802e;
+  background-color: #1c489636;
   width: 100%;
   padding: 20px;
+  margin: 40px 0px;
 }
 
 .statistiche .dati-teamlegale {
@@ -350,9 +371,84 @@ section {
   font-size: 16px;
 }
 
+.principal-text-approfondimenti {
+  background: #1c489636;
+  padding: 55px;
+}
+
+.principal-text-approfondimenti h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.principal-text-approfondimenti p {
+  font-size: 20px;
+}
+
+.section-approfondimenti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  padding-top: 115px;
+}
+
+.section-approfondimenti .singolo-approfondimento {
+  flex-basis: 346px;
+  height: 250px;
+  margin: 20px;
+  border: 1px solid #f1f1f1;
+  padding: 40px 25px;
+}
+
+.section-approfondimenti .singolo-approfondimento i {
+  font-size: 30px;
+}
+
+.section-approfondimenti .singolo-approfondimento h5 {
+  font-size: 22px;
+  text-transform: uppercase;
+  padding: 10px 0px;
+}
+
+.section-approfondimenti .singolo-approfondimento p {
+  font-size: 16px;
+}
+
+.separator-img {
+  background-image: url("https://www.studiolegalelionesarli.it/wp-content/uploads/2017/03/slider-studio-legale.jpg");
+  height: 390px;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 100px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.separator-img h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.separator-img a {
+  padding: 15px 110px;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  border-radius: 7px;
+  margin-left: 49px;
+  font-weight: bolder;
+}
+
 @media screen and (min-width: 965px) {
   .statistiche {
-    background-color: #8080802e;
+    background-color: #1c489636;
     width: 100%;
     padding: 20px;
   }

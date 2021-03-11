@@ -3,6 +3,7 @@
         position: absolute;
         z-index: 1;
         width: 100%;
+        background-color: white;
 
             .header-navbar {
                 display: flex;
@@ -43,9 +44,27 @@
 
                             li {
                                 margin: 0px 14px;
+                                position: relative;
+
+                                &::after {
+                                    content: '';
+                                    height: 2px;
+                                    width: 0px;
+                                    background: black;
+                                    border-radius: 10px;
+                                    position: absolute;
+                                    bottom: -5px;
+                                    right: 0%;
+                                    transition: .3s;
+                                }
+
+                                &:hover::after {
+                                    width: 100%;
+                                    left: 0%;
+                                }
 
                                 a {
-                                    color: grey;
+                                    color: #565050;
                                     font-size: 22px;
                                     text-transform: uppercase;
 
