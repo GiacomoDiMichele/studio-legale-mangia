@@ -50,6 +50,15 @@ section {
     }
 }
 
+.text-header {
+    position: absolute;
+
+    h1 {
+        font-size: 65px;
+        color: white;
+    }
+}
+
 .statistiche {
     background-color: #1c489636;
     width: 100%;
@@ -99,8 +108,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap-reverse;
-    padding-top: 115px;
+    flex-wrap: wrap;
+    padding-top: 45px;
 
     .singolo-approfondimento {
     flex-basis: 346px;

@@ -6,6 +6,9 @@
             <div class="prev">
                 <i @click="immagine_precedente" class="fas fa-chevron-left"></i>
             </div>
+            <div class="text-header">
+                <h1>Studio legale Mangia</h1>
+            </div>
             <div class="images">
                 <img :src="immagine[posizione_immagine]" alt="foto-team-legale-mangia">
             </div>
@@ -15,11 +18,11 @@
         </div>
 
         <section class="jumbotron">
+            <div class="principal-text-approfondimenti">
+                <h1>UNO STUDIO LEGALE, A PESCARA, PRONTO AD AIUTARTI E DIFENDERE I TUOI DIRITTI</h1>
+                <p>Ci piace esserti vicino: per questo abbiamo preparato una serie di utili approfondimenti</p>
+            </div>
             <div class="container">
-                <div class="principal-text-approfondimenti">
-                    <h1>UNO STUDIO LEGALE, A PESCARA, PRONTO AD AIUTARTI E DIFENDERE I TUOI DIRITTI</h1>
-                    <p>Ci piace esserti vicino: per questo abbiamo preparato una serie di utili approfondimenti</p>
-                </div>
                 <div class="section-approfondimenti">
                     <div class="singolo-approfondimento">
                         <i class="fas fa-question"></i>

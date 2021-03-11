@@ -97,6 +97,8 @@
 var app = new Vue({
   el: '#root',
   data: {
+    active: false,
+    isActive: false,
     //creo la chiave per assegnare la base di partenza delle immagini nello slider, ad ogni click cambierà valore
     posizione_immagine: 0,
     //creo una chiave per inserire le immagini, questa volta tramite un array per contenere più elementi dello stesso tipo
@@ -122,6 +124,10 @@ var app = new Vue({
       if (this.posizione_immagine < 0) {
         this.posizione_immagine = this.immagine.length - 1;
       }
+    },
+    toggleMenu: function toggleMenu() {
+      // x menu mobile
+      this.isActive = !this.isActive;
     }
   }
 });

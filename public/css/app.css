@@ -36,6 +36,46 @@ header {
   background-color: white;
 }
 
+header::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 180px;
+  width: 100px;
+  height: 0px;
+  background: transparent;
+  z-index: 10;
+  transition: 1s;
+}
+
+header.active::before {
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: white;
+}
+
+header::after {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  right: 100px;
+  width: 180px;
+  height: 0px;
+  background: transparent;
+  transition: 1s;
+  z-index: 9;
+}
+
+header.active::after {
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: white;
+}
+
 header .header-navbar {
   display: flex;
   align-items: center;
@@ -48,6 +88,7 @@ header .header-navbar {
 header .header-navbar .header-logo {
   width: 200px;
   height: 100%;
+  z-index: 10;
 }
 
 header .header-navbar .header-logo a .logo {
@@ -109,6 +150,59 @@ header .header-navbar .toggle-menu {
   display: block;
   font-size: 32px;
   cursor: pointer;
+  z-index: 10;
+}
+
+.menu-mobile {
+  min-width: 250px;
+  min-height: 250px;
+  max-width: 600px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 0s;
+  border: 1px solid black;
+}
+
+.menu-mobile ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.menu-mobile ul li:hover {
+  background-color: white;
+  color: white;
+  transition: 1s;
+}
+
+.menu-mobile ul li:hover a {
+  color: black;
+  letter-spacing: 3px;
+}
+
+.menu-mobile ul li a {
+  display: inline-block;
+  padding: 20px 60px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 25px;
+  transition: all 0.5s ease-in-out;
+}
+
+header.active .menu-mobile {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 1s;
 }
 
 @media screen and (min-width: 1075px) {
@@ -340,6 +434,15 @@ section {
   background-color: black;
 }
 
+.text-header {
+  position: absolute;
+}
+
+.text-header h1 {
+  font-size: 65px;
+  color: white;
+}
+
 .statistiche {
   background-color: #1c489636;
   width: 100%;
@@ -389,8 +492,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap-reverse;
-  padding-top: 115px;
+  flex-wrap: wrap;
+  padding-top: 45px;
 }
 
 .section-approfondimenti .singolo-approfondimento {
